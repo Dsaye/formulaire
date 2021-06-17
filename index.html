@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaires</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+       
+    </head>
+    
+    <body>
+        <div class="container">
+        <h1 class="h1-responsive text-center font-weight-bold pt-2">FORMULAIRE</h1>
+        
+        <form id="form">
+            <div class="md-form">
+            
+            <input type='text' name='nom' id='nom' maxlength='20' required class="form-control">
+            <label for='nom' class="form-label">Nom : </label>
+            <span id='sansNom' class="form-text"></span>
+        </div>
+            <div class="md-form">
+            
+            <input type='text' name='adresse' id='adresse' maxlength='20' required class="form-control">
+            <label for='Adresse' class="form-label">Adresse : </label>
+            <span id='sansAdresse' class="form-text"></span>
+        </div>
+        <div class="md-form">
+            <label for='mail' class="form-label" >E-mail : </label>
+            <input type='email' name='mail' id='mail' required class="form-control">
+            </div>
+            <div class="md-form">
+            
+            <input type="password" name='mdp' id='mdp' required class="form-control">
+            <label for='mdp' class="form-label" >Mot de passe: </label>
+        </div>
+        <div class="md-form">
+            
+            <input type='tel' name='tel' id='tel' required class="form-control">
+            <label for='tel'class="form-label" >Téléphone :</label>
+        </div>
+        <div class="md-form">
+            <select name="cours" id="cours" class="form-select form-select-lg mb-3"  aria-label="Default select">
+                <option selected>Choisir Votre Cours</option>
+                <option value="php">PHP</option>
+                <option value="java">JAVA</option>
+                <option value="javascripts">JAVASCRIPTS</option>
+            </select>
+        </div>
+        <div class="md-form">
+           
+            <textarea name='com' id='com' rows="4" required class="form-control md-textarea"></textarea>
+            <label for='com'class="form-label" >Commentaire :</label>
+            <span id='sansCom' class="form-text"></span>
+        </div><br>
+
+                
+            <input type='submit' value='Envoyer' id='bouton_envoi'class="btn btn-success" >
+            <input type="reset" value="annuler" id="bouton_annule" class="btn btn-danger">
+        </form>
+    </div>
+    <script type="text/javascript"  src="js/form.js"></script>
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init('user_Pl6ExvZlV0hgLuomYYjxQ')
+</script>
+        
+    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</html>
+
